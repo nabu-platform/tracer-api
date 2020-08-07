@@ -4,7 +4,7 @@
 	<groupId>be.nabu.libs.tracer</groupId>
 	<artifactId>tracer-api</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0-SNAPSHOT</version>
+	<version>${be.nabu.libs.tracer-tracer-api-version}</version>
 	<name>tracer-api</name>
 	<url>http://maven.apache.org</url>
 
