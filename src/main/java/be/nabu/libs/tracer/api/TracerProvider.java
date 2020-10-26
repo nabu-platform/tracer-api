@@ -4,6 +4,12 @@ import java.net.URI;
 
 public interface TracerProvider {
 	/**
+	 * Correlate this tracer provider to another trace
+	 * @param correlationId
+	 */
+	public void setCorrelationId(String correlationId);
+	public String getCorrelationId();
+	/**
 	 * @param databaseId The id of the database (e.g. jdbc connection id)
 	 * @param vendor The vendor of the database (Oracle, MySQL, PostgreSQL,...)
 	 * @param endpoint The endpoint of the database which can be used for grouping (this can be the jdbc connection string if relevant or the host, the file...)
